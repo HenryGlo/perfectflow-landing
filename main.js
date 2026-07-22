@@ -269,7 +269,43 @@
     }
   }
 
-  /* ─── 8. Año dinámico en footer (si existe placeholder) ─── */
-  const yearEl = document.querySelector('[data-year-now]');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  /* ─── 8. Año dinámico (footer + modales) ─── */
+  document.querySelectorAll('[data-year-now]').forEach((el) => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  /* ─── 9. Modales legales ─── */
+  function openModal(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModals() {
+    document.querySelectorAll('.modal.open').forEach((m) => m.classList.remove('open'));
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-open]').forEach((btn) => {
+    btn.addEventListener('click', (e) => { e.preventDefault(); openModal(btn.dataset.modalOpen); });
+  });
+  document.querySelectorAll('[data-modal-close]').forEach((btn) => {
+    btn.addEventListener('click', closeModals);
+  });
+  document.querySelectorAll('.modal').forEach((m) => {
+    m.addEventListener('click', (e) => { if (e.target === m) closeModals(); });
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModals(); });
+
+  /* ─── 10. Banner de cookies ─── */
+  const cookieBanner = document.getElementById('cookieBanner');
+  const acceptCookies = document.getElementById('acceptCookies');
+  if (cookieBanner && acceptCookies) {
+    let accepted = false;
+    try { accepted = localStorage.getItem('pf_cookies') === '1'; } catch (_) {}
+    if (!accepted) setTimeout(() => cookieBanner.classList.add('open'), 3000);
+    acceptCookies.addEventListener('click', () => {
+      cookieBanner.classList.remove('open');
+      try { localStorage.setItem('pf_cookies', '1'); } catch (_) {}
+    });
+  }
 })();
