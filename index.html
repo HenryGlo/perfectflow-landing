@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
+  <title>PerfectFlow — ERP + Automatización para PYMEs</title>
+  <meta name="description" content="PerfectFlow conecta CRM, ventas, finanzas e inventario con más de 200 servicios como Twilio, Mailjet y Stripe. Elige Enterprise o empieza con PF Lite y paga solo lo que necesitas." />
+
+  <meta property="og:title" content="PerfectFlow — Un ERP que se conecta con todo" />
+  <meta property="og:description" content="Automatiza, vende y crece. Más de 200 integraciones. Enterprise o PF Lite: paga solo lo que necesitas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://perfectflow.cloud" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░░░ Header ░░░ -->
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="PerfectFlow inicio">
+        <img src="assets/pf-logo.jpg" class="logo__img" alt="" width="34" height="34" />
+        <span class="logo__text">PerfectFlow</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#modulos" class="nav__link">Módulos</a>
+        <a href="#integraciones" class="nav__link">Integraciones</a>
+        <a href="#casos" class="nav__link">Casos</a>
+        <a href="#precios" class="nav__link">Precios</a>
+        <a href="#contacto" class="btn btn--primary nav__cta--mobile">Solicitar demo</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#precios" class="nav__link">Precios</a>
+        <a href="#contacto" class="btn btn--primary btn--sm">Solicitar demo</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ░░░ Hero (tarjeta oscura) ░░░ -->
+    <section class="hero-wrap">
+      <div class="container">
+        <div class="hero">
+          <a href="#integraciones" class="badge reveal">
+            <span class="badge__spark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/></svg>
+            </span>
+            Potenciado por IA · el futuro de tu negocio
+            <span class="badge__arrow">→</span>
+          </a>
+
+          <h1 class="hero__title reveal">
+            Deja de perder ventas por
+            <span class="hl-light">desorden operativo</span>
+          </h1>
+
+          <p class="hero__subtitle reveal">
+            Pon orden en tu negocio y recupera el control. PerfectFlow centraliza
+            ventas, inventario, cobranza y clientes en un solo lugar — automatiza
+            lo repetitivo y te da visibilidad total desde cualquier dispositivo.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#contacto" class="btn btn--primary btn--lg">Quiero ver cómo funciona</a>
+            <a href="#modulos" class="btn btn--outline-light btn--lg">Ver módulos</a>
+          </div>
+
+          <p class="hero__note reveal">Únete a las +500 PYMEs que ya pusieron orden con PerfectFlow</p>
+
+          <div class="trust reveal">
+            <span class="trust__logo">Twilio</span>
+            <span class="trust__logo">Mailjet</span>
+            <span class="trust__logo">Stripe</span>
+            <span class="trust__logo">WhatsApp</span>
+            <span class="trust__logo">Slack</span>
+            <span class="trust__logo">Shopify</span>
+          </div>
+        </div>
+
+        <!-- Dashboard interactivo -->
+        <div class="showcase reveal">
+          <div class="dash" id="dash">
+            <div class="dash__bar">
+              <span class="dash__dot"></span><span class="dash__dot"></span><span class="dash__dot"></span>
+              <span class="dash__url"><svg class="dash__lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> app.perfectflow.cloud</span>
+            </div>
+
+            <div class="dash__app">
+              <!-- Sidebar -->
+              <aside class="dash__side">
+                <div class="dash__brand"><img src="assets/pf-logo.jpg" alt="" /> <span>PerfectFlow</span></div>
+                <nav class="dash__nav" id="dashNav">
+                  <button class="dnav is-active" data-title="Panel general" data-accent="#1860F0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+                    <span>Inicio</span>
+                  </button>
+                  <button class="dnav" data-title="CRM · Clientes" data-accent="#1860F0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                    <span>CRM</span>
+                  </button>
+                  <button class="dnav" data-title="Ventas &amp; Caja" data-accent="#22A06B">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h2l2.6 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+                    <span>Ventas</span>
+                  </button>
+                  <button class="dnav" data-title="Finanzas" data-accent="#7D66FF">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                    <span>Finanzas</span>
+                  </button>
+                  <button class="dnav" data-title="Inventario" data-accent="#C9971C">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                    <span>Inventario</span>
+                  </button>
+                  <button class="dnav" data-title="Automatización" data-accent="#0E9DB8">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <span>Automatización</span>
+                  </button>
+                  <button class="dnav" data-title="Reportes" data-accent="#D6336C">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="13" y="7" width="3" height="10" rx="1"/></svg>
+                    <span>Reportes</span>
+                  </button>
+                </nav>
+                <div class="dash__upgrade">
+                  <strong>PF Lite</strong>
+                  <span>Activa más módulos →</span>
+                </div>
+              </aside>
+
+              <!-- Contenido -->
+              <div class="dash__content">
+                <div class="dash__topbar">
+                  <h4 class="dash__page" id="dashTitle">Panel general</h4>
+                  <div class="dash__search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> <span>Buscar pedidos, clientes…</span></div>
+                  <span class="dash__bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg><i class="dash__dot-badge"></i></span>
+                  <span class="dash__avatar">HG</span>
+                </div>
+
+                <div class="dash__scroll">
+                  <!-- KPIs -->
+                  <div class="dash__kpis">
+                    <div class="kpi"><span class="kpi__label">Ventas hoy</span><span class="kpi__val" data-count="12480" data-prefix="$">$0</span><span class="kpi__trend up">▲ 18%</span></div>
+                    <div class="kpi"><span class="kpi__label">Pedidos</span><span class="kpi__val" data-count="236">0</span><span class="kpi__trend up">▲ 9%</span></div>
+                    <div class="kpi"><span class="kpi__label">Ticket medio</span><span class="kpi__val" data-count="53" data-prefix="$">$0</span><span class="kpi__trend up">▲ 4%</span></div>
+                    <div class="kpi"><span class="kpi__label">Automatizaciones</span><span class="kpi__val" data-count="1024">0</span><span class="kpi__trend">activas</span></div>
+                  </div>
+
+                  <div class="dash__grid">
+                    <!-- Gráfico de ventas -->
+                    <div class="dcard">
+                      <div class="dcard__head">
+                        <span class="dcard__title">Ventas</span>
+                        <div class="dcard__tabs" id="dashTabs">
+                          <button class="dtab is-active" data-tab="hoy">Hoy</button>
+                          <button class="dtab" data-tab="semana">Semana</button>
+                          <button class="dtab" data-tab="mes">Mes</button>
+                        </div>
+                      </div>
+                      <div class="dchart" id="dashChart" aria-hidden="true">
+                        <span class="dbar" style="--h:38%"></span><span class="dbar" style="--h:62%"></span>
+                        <span class="dbar" style="--h:48%"></span><span class="dbar" style="--h:78%"></span>
+                        <span class="dbar" style="--h:55%"></span><span class="dbar" style="--h:90%"></span>
+                        <span class="dbar" style="--h:70%"></span><span class="dbar" style="--h:84%"></span>
+                        <span class="dbar" style="--h:60%"></span><span class="dbar" style="--h:96%"></span>
+                        <span class="dbar" style="--h:74%"></span><span class="dbar" style="--h:88%"></span>
+                      </div>
+                    </div>
+
+                    <!-- Actividad en vivo -->
+                    <div class="dcard">
+                      <div class="dcard__head">
+                        <span class="dcard__title">Actividad en vivo</span>
+                        <span class="dcard__live"><i></i> En directo</span>
+                      </div>
+                      <ul class="dfeed" id="dashFeed"></ul>
+                    </div>
+                  </div>
+
+                  <!-- Tabla de pedidos -->
+                  <div class="dcard">
+                    <div class="dcard__head"><span class="dcard__title">Pedidos recientes</span><span class="dcard__link">Ver todos</span></div>
+                    <div class="dtable">
+                      <div class="dtr dtr--head"><span>Cliente</span><span>Canal</span><span>Total</span><span>Estado</span></div>
+                      <div class="dtr"><span class="dcell-name"><i class="dav" style="--c:#1860F0">M</i> María López</span><span class="dchan">Tienda</span><span>$1.240</span><span class="pill pill--ok">Pagado</span></div>
+                      <div class="dtr"><span class="dcell-name"><i class="dav" style="--c:#22A06B">J</i> Juan Ríos</span><span class="dchan">WhatsApp</span><span>$680</span><span class="pill pill--wait">Pendiente</span></div>
+                      <div class="dtr"><span class="dcell-name"><i class="dav" style="--c:#7D66FF">A</i> Ana Soto</span><span class="dchan">Web</span><span>$2.150</span><span class="pill pill--ok">Pagado</span></div>
+                      <div class="dtr"><span class="dcell-name"><i class="dav" style="--c:#C9971C">C</i> Carlos Paz</span><span class="dchan">Tienda</span><span>$430</span><span class="pill pill--new">Nuevo</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="float-chip float-chip--1" data-float><span class="float-chip__dot" style="--c:#22A06B"></span> Esta semana · <strong>+$847K vendidos</strong></span>
+          <span class="float-chip float-chip--2" data-float><span class="float-chip__dot" style="--c:#7D66FF"></span> Cobranza automática · <strong>12 pagos recibidos</strong></span>
+          <span class="float-chip float-chip--3" data-float><span class="float-chip__dot" style="--c:#1860F0"></span> 100% en la nube</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ Productos: Enterprise vs Lite ░░░ -->
+    <section class="section section--violet" id="productos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Dos formas de empezar</span>
+          <h2 class="section__title">Una plataforma. <span class="hl">El plan que tu negocio necesita.</span></h2>
+          <p class="section__lead">Arranca pequeño con PF Lite y crece hacia Enterprise sin migrar de sistema. Tus datos, tu equipo y tus automatizaciones se quedan contigo.</p>
+        </div>
+
+        <div class="products">
+          <article class="product reveal">
+            <div class="product__head">
+              <img src="assets/pf-logo.jpg" alt="PerfectFlow" class="product__logo" width="48" height="48" />
+              <span class="product__tag tag--lite">PF Lite</span>
+            </div>
+            <h3 class="product__name">Para los que están empezando</h3>
+            <p class="product__desc">Ideal para emprendedores y negocios pequeños. Activa solo los módulos que usas y <strong>paga solo lo que necesitas</strong>.</p>
+            <ul class="product__list">
+              <li><span class="check">✓</span> Tu propio subdominio en minutos</li>
+              <li><span class="check">✓</span> CRM, ventas y caja listos para usar</li>
+              <li><span class="check">✓</span> Activa módulos a la carta</li>
+              <li><span class="check">✓</span> Integraciones esenciales incluidas</li>
+              <li><span class="check">✓</span> Sin permanencia ni costos ocultos</li>
+            </ul>
+            <a href="#precios" class="btn btn--ghost btn--block">Empezar con Lite</a>
+          </article>
+
+          <article class="product product--featured reveal">
+            <span class="product__ribbon">Recomendado</span>
+            <div class="product__head">
+              <img src="assets/pf-logo.jpg" alt="PerfectFlow" class="product__logo" width="48" height="48" />
+              <span class="product__tag tag--ent">PerfectFlow Enterprise</span>
+            </div>
+            <h3 class="product__name">Todo el poder, sin límites</h3>
+            <p class="product__desc">Para empresas que necesitan automatizar de punta a punta con todos los módulos y más de 200 integraciones.</p>
+            <ul class="product__list">
+              <li><span class="check">✓</span> Todos los módulos incluidos</li>
+              <li><span class="check">✓</span> +200 integraciones (Twilio, Mailjet, Stripe…)</li>
+              <li><span class="check">✓</span> Motor de automatización ilimitado</li>
+              <li><span class="check">✓</span> Roles y permisos avanzados</li>
+              <li><span class="check">✓</span> Multi-sucursal y multi-usuario</li>
+              <li><span class="check">✓</span> Soporte prioritario y onboarding</li>
+            </ul>
+            <a href="#precios" class="btn btn--primary btn--block">Hablar con ventas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ Módulos ░░░ -->
+    <section class="section" id="modulos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Módulos</span>
+          <h2 class="section__title">Un sistema que crece <span class="hl">con tu negocio</span></h2>
+          <p class="section__lead">Activa los módulos que necesitas hoy. Escala cuando estés listo, sin cambiar de plataforma. Accede desde cualquier lugar, sin instalaciones.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" style="--accent:#1860F0;--accent-soft:#E6F0FF">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="card__title">CRM y Agenda</h3>
+            <p class="card__text">Perfil 360 del cliente con historial de compras, interacciones y documentos. Citas integradas con recordatorios automáticos.</p>
+          </article>
+          <article class="card reveal" style="--accent:#22A06B;--accent-soft:#DFF2E5">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Ventas y Punto de Venta</h3>
+            <p class="card__text">De la cotización al cierre. POS multi-caja con soporte multi-sucursal y multi-moneda, y corte de caja.</p>
+          </article>
+          <article class="card reveal" style="--accent:#7D66FF;--accent-soft:#EFEBFF">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/><path d="M6 15h4"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Finanzas y Cobranza</h3>
+            <p class="card__text">Facturación electrónica, cuentas por cobrar, pagos parciales y seguimiento automático de cartera vencida.</p>
+          </article>
+          <article class="card reveal" style="--accent:#C9971C;--accent-soft:#FFF6C9">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Inventario y Almacenes</h3>
+            <p class="card__text">Stock en tiempo real con trazabilidad completa. Multi-almacén, alertas de reorden y traspasos entre ubicaciones.</p>
+          </article>
+          <article class="card reveal" style="--accent:#0E9DB8;--accent-soft:#D9F2F7">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Automatización</h3>
+            <p class="card__text">Facturas que se envían solas, cobros que se recuerdan y stock que se actualiza al vender. Sin trabajo manual.</p>
+          </article>
+          <article class="card reveal" style="--accent:#D6336C;--accent-soft:#FFE3EC">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v16a2 2 0 0 0 2 2h16"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="13" y="7" width="3" height="10" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Reportes</h3>
+            <p class="card__text">Sabe cuánto vendiste, quién te debe y qué tan rentable eres. KPIs en tiempo real para decidir con datos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ Integraciones ░░░ -->
+    <section class="section section--sand" id="integraciones">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Integraciones nativas</span>
+          <h2 class="section__title">Tus herramientas favoritas. <span class="hl">Conectadas.</span></h2>
+          <p class="section__lead">Deja de copiar datos entre sistemas. PerfectFlow habla con tu banco, tu tienda, tus clientes y tu contador.</p>
+        </div>
+
+        <div class="integ-search reveal">
+          <input type="text" id="integSearch" class="integ-search__input" placeholder="Busca una integración… (ej. Twilio, Stripe, Slack)" aria-label="Buscar integración" />
+        </div>
+
+        <div class="integ-grid" id="integGrid"></div>
+        <p class="integ-empty" id="integEmpty" hidden>No encontramos esa integración… todavía. Escríbenos y la conectamos.</p>
+
+        <p class="integ-more reveal">¿Usas algo que no ves aquí? <a href="#contacto">Escríbenos</a> — lo integramos en tu implementación sin costo extra.</p>
+      </div>
+    </section>
+
+    <!-- ░░░ Automatización ░░░ -->
+    <section class="section">
+      <div class="container split">
+        <div class="split__text reveal">
+          <span class="eyebrow">Automatización sin código</span>
+          <h2 class="section__title">Deja que tu negocio <span class="hl">se mueva solo</span></h2>
+          <p class="section__lead">Conecta disparadores y acciones en minutos. Cuando entra un pedido, PerfectFlow puede cobrarlo, avisar al cliente por WhatsApp, generar la factura y actualizar el inventario. Todo automático.</p>
+          <ul class="split__list">
+            <li><span class="check">✓</span> Flujos visuales arrastrar y soltar</li>
+            <li><span class="check">✓</span> Disparadores en tiempo real</li>
+            <li><span class="check">✓</span> Plantillas listas para empezar</li>
+          </ul>
+          <a href="#precios" class="btn btn--primary">Probar automatización</a>
+        </div>
+
+        <div class="split__visual reveal">
+          <div class="flow">
+            <div class="flow__node flow__node--trigger"><span class="flow__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h2l2.6 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></span><span class="flow__label">Nueva venta</span></div>
+            <div class="flow__line"></div>
+            <div class="flow__node"><span class="flow__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span><span class="flow__label">WhatsApp al cliente</span></div>
+            <div class="flow__line"></div>
+            <div class="flow__node"><span class="flow__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span><span class="flow__label">Factura por Mailjet</span></div>
+            <div class="flow__line"></div>
+            <div class="flow__node flow__node--end"><span class="flow__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span><span class="flow__label">Actualiza stock</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ Stats ░░░ -->
+    <section class="section section--light">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="500" data-suffix="+">0</span><span class="stat__label">Empresas activas</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="6" data-suffix="">0</span><span class="stat__label">Países en Américas</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="99" data-suffix=".9%">0</span><span class="stat__label">Disponibilidad garantizada</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="200" data-suffix="+">0</span><span class="stat__label">Integraciones disponibles</span></div>
+      </div>
+    </section>
+
+    <!-- ░░░ Testimonios ░░░ -->
+    <section class="section section--violet" id="casos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Casos de éxito</span>
+          <h2 class="section__title">Empresas que ya <span class="hl">transformaron su operación</span></h2>
+        </div>
+
+        <div class="tcards">
+          <article class="tcard reveal">
+            <div class="tcard__stars">★★★★★</div>
+            <p class="tcard__metric"><strong>+40%</strong> ventas cerradas</p>
+            <blockquote>“Antes perdíamos ventas por no dar seguimiento. Hoy el sistema manda recordatorios automáticos y yo solo cierro. <strong>Mi equipo vende más sin trabajar más horas.</strong>”</blockquote>
+            <div class="tcard__author">
+              <span class="tcard__av" style="--c:#1860F0">C</span>
+              <div><p class="tcard__name">Carolina Méndez</p><p class="tcard__role">Dir. Comercial · Distribuidora del Norte · México</p></div>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <div class="tcard__stars">★★★★★</div>
+            <p class="tcard__metric"><strong>-85%</strong> tiempo en facturación</p>
+            <blockquote>“Facturaba manual, perdía horas cada semana. Ahora la factura sale sola cuando cierro la venta. <strong>Recuperé 2 días al mes que ahora uso para vender.</strong>”</blockquote>
+            <div class="tcard__author">
+              <span class="tcard__av" style="--c:#22A06B">R</span>
+              <div><p class="tcard__name">Roberto Álvarez</p><p class="tcard__role">Fundador · TechParts Colombia · 23 empleados</p></div>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <div class="tcard__stars">★★★★★</div>
+            <p class="tcard__metric"><strong>$0</strong> perdido por faltantes</p>
+            <blockquote>“Vendíamos productos que no teníamos en stock. El sistema ahora alerta antes de que se acabe. <strong>Cero ventas perdidas por inventario en 8 meses.</strong>”</blockquote>
+            <div class="tcard__author">
+              <span class="tcard__av" style="--c:#C9971C">V</span>
+              <div><p class="tcard__name">Valentina Rojas</p><p class="tcard__role">Gerente de Ops · Ferretería Central · Chile</p></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tbar reveal">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg> +500 empresas activas</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> 6 países en Américas</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg> 99,9% disponibilidad</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ Precios ░░░ -->
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Precios</span>
+          <h2 class="section__title">Paga <span class="hl">solo lo que necesitas</span></h2>
+          <p class="section__lead">Empieza gratis. Crece a tu ritmo. Cambia de plan cuando quieras.</p>
+        </div>
+
+        <div class="price-toggle reveal">
+          <span class="price-toggle__opt is-active" data-cycle="month">Mensual</span>
+          <button class="price-toggle__switch" id="priceSwitch" aria-label="Cambiar facturación"><span></span></button>
+          <span class="price-toggle__opt" data-cycle="year">Anual <em>-20%</em></span>
+        </div>
+
+        <div class="pricing">
+          <article class="plan reveal">
+            <h3 class="plan__name">PF Lite</h3>
+            <p class="plan__tagline">Para empezar</p>
+            <div class="plan__price"><span class="plan__currency">$</span><span class="plan__amount" data-month="100" data-year="80">100</span><span class="plan__period">/mes</span></div>
+            <p class="plan__note">activa solo los módulos que usas</p>
+            <a href="#" class="btn btn--ghost btn--block">Empezar gratis</a>
+            <ul class="plan__features">
+              <li><span class="check">✓</span> 1 sucursal · hasta 3 usuarios</li>
+              <li><span class="check">✓</span> CRM, ventas y caja</li>
+              <li><span class="check">✓</span> Módulos a la carta</li>
+              <li><span class="check">✓</span> Integraciones esenciales</li>
+              <li><span class="check">✓</span> Soporte por correo</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge">Más popular</span>
+            <h3 class="plan__name">Enterprise</h3>
+            <p class="plan__tagline">Todo incluido</p>
+            <div class="plan__price"><span class="plan__currency">$</span><span class="plan__amount" data-month="400" data-year="320">400</span><span class="plan__period">/mes</span></div>
+            <p class="plan__note">usuarios y módulos ilimitados</p>
+            <a href="#" class="btn btn--primary btn--block">Empezar ahora</a>
+            <ul class="plan__features">
+              <li><span class="check">✓</span> Todos los módulos</li>
+              <li><span class="check">✓</span> +200 integraciones (Twilio, Mailjet, Stripe…)</li>
+              <li><span class="check">✓</span> Automatización ilimitada</li>
+              <li><span class="check">✓</span> Multi-sucursal y multi-usuario</li>
+              <li><span class="check">✓</span> Roles y permisos avanzados</li>
+              <li><span class="check">✓</span> Soporte prioritario</li>
+            </ul>
+          </article>
+
+          <article class="plan reveal">
+            <h3 class="plan__name">A medida</h3>
+            <p class="plan__tagline">Para grandes operaciones</p>
+            <div class="plan__price"><span class="plan__custom">Hablemos</span></div>
+            <p class="plan__note">infraestructura dedicada e integraciones a medida</p>
+            <a href="#" class="btn btn--ghost btn--block">Contactar ventas</a>
+            <ul class="plan__features">
+              <li><span class="check">✓</span> Todo lo de Enterprise</li>
+              <li><span class="check">✓</span> Integraciones personalizadas</li>
+              <li><span class="check">✓</span> SLA y onboarding dedicado</li>
+              <li><span class="check">✓</span> Gerente de cuenta</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ CTA final / Contacto ░░░ -->
+    <section class="cta-wrap" id="contacto">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2 class="cta-final__title">¿Cuánto te está costando <span class="hl-light">el desorden?</span></h2>
+          <p class="cta-final__text">Cada semana sin automatizar es inventario perdido, ventas sin cerrar y horas quemadas en tareas que una máquina hace mejor.</p>
+          <div class="hero__actions">
+            <a href="https://calendly.com/fglofiego/20min" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Agendar una demo (20 min)</a>
+            <a href="https://wa.me/56948635044" target="_blank" rel="noopener" class="btn btn--outline-light btn--lg">Escríbenos por WhatsApp</a>
+          </div>
+          <p class="cta-final__note">Sin compromiso · Te respondemos hoy · Sin bots, sin formularios</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ░░░ Footer ░░░ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <img src="assets/pf-logo.jpg" class="logo__img" alt="" width="34" height="34" />
+          <span class="logo__text">PerfectFlow</span>
+        </a>
+        <p class="footer__tagline">ERP + Automatización para PYMEs. Conecta, automatiza y crece.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Producto</h4>
+        <a href="#modulos">Módulos</a>
+        <a href="#integraciones">Integraciones</a>
+        <a href="#precios">Precios</a>
+        <a href="#productos">PF Lite</a>
+      </div>
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+        <a href="#">Soporte</a>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Seguridad</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 PerfectFlow. Todos los derechos reservados.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
