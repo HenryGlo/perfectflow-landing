@@ -120,6 +120,10 @@
   const switchEl = document.getElementById('priceSwitch');
   const opts = document.querySelectorAll('.price-toggle__opt');
   const amounts = document.querySelectorAll('.plan__amount');
+  const billed = document.querySelectorAll('.plan__billed[data-month]');
+  // Los CTA con checkout directo dependen del ciclo: el link de pago es
+  // mensual, así que en anual el plan pasa por ventas.
+  const cycleCtas = document.querySelectorAll('[data-cycle-cta]');
 
   function setCycle(cycle) {
     const year = cycle === 'year';
@@ -128,6 +132,20 @@
     amounts.forEach((a) => {
       const target = year ? a.dataset.year : a.dataset.month;
       if (target != null) animateNumber(a, parseInt(a.textContent, 10) || 0, parseInt(target, 10));
+    });
+    billed.forEach((b) => { b.textContent = year ? b.dataset.year : b.dataset.month; });
+    cycleCtas.forEach((cta) => {
+      const href = year ? cta.dataset.hrefYear : cta.dataset.hrefMonth;
+      const label = year ? cta.dataset.labelYear : cta.dataset.labelMonth;
+      if (href) cta.setAttribute('href', href);
+      if (label) cta.textContent = label;
+      if (href && /^https?:/.test(href)) {
+        cta.setAttribute('target', '_blank');
+        cta.setAttribute('rel', 'noopener');
+      } else {
+        cta.removeAttribute('target');
+        cta.removeAttribute('rel');
+      }
     });
   }
   if (switchEl) {
