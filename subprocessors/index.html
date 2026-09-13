@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subencargados del tratamiento — PerfectFlow</title>
+  <meta name="description" content="Lista de los proveedores que intervienen en la prestación de PerfectFlow y tratan datos por cuenta de nuestros clientes, conforme al artículo 28 del RGPD." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#ffffff; --bg-sand:#FAF8F5; --bg-violet2:#F3F0FF; --bg-light2:#F7F9FA;
+      --ink:#000000; --body:#4B575E; --muted:#78828A;
+      --blue:#1860F0; --violet-text:#7D66FF; --green:#22A06B;
+      --border:#DCE2E5; --border-2:#E9EDF0;
+      --r-sm:12px; --r:16px; --maxw:920px;
+      --shadow-sm:0 2px 8px -2px rgba(0,0,0,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--body);
+      font-family:'Host Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto; padding-inline:20px}
+
+    header.bar{border-bottom:1px solid var(--border-2); background:var(--bg)}
+    .bar__inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:16px; flex-wrap:wrap}
+    .logo{display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); font-weight:700}
+    .logo img{border-radius:8px; display:block}
+    .bar__back{color:var(--blue); text-decoration:none; font-weight:500; font-size:.94rem}
+    .bar__back:hover{text-decoration:underline}
+
+    .hero{background:var(--bg-sand); border-bottom:1px solid var(--border-2); padding-block:52px}
+    h1{font-size:clamp(1.85rem,4.2vw,2.6rem); line-height:1.15; color:var(--ink); margin:0 0 14px; letter-spacing:-.02em}
+    .lede{font-size:1.075rem; margin:0; max-width:62ch}
+    .stamp{display:inline-block; margin-top:22px; padding:7px 14px; background:var(--bg); border:1px solid var(--border);
+           border-radius:999px; font-size:.85rem; color:var(--muted)}
+    .stamp b{color:var(--ink); font-weight:600}
+
+    main{padding-block:48px 72px}
+    section{margin-bottom:52px}
+    h2{font-size:1.45rem; color:var(--ink); margin:0 0 10px; letter-spacing:-.01em}
+    h3{font-size:1.08rem; color:var(--ink); margin:32px 0 8px}
+    p{margin:0 0 14px}
+    a{color:var(--blue)}
+    .note{max-width:70ch}
+
+    .tablewrap{overflow-x:auto; border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow-sm); margin-top:18px}
+    table{border-collapse:collapse; width:100%; min-width:640px; font-size:.94rem; background:var(--bg)}
+    thead th{
+      background:var(--bg-light2); text-align:left; padding:13px 16px; color:var(--muted);
+      font-size:.76rem; text-transform:uppercase; letter-spacing:.07em; font-weight:600;
+      border-bottom:1px solid var(--border); white-space:nowrap;
+    }
+    tbody td{padding:15px 16px; border-bottom:1px solid var(--border-2); vertical-align:top}
+    tbody tr:last-child td{border-bottom:0}
+    tbody td:first-child{color:var(--ink); font-weight:600; white-space:nowrap}
+    .where{color:var(--muted); font-size:.9rem}
+    .eu{color:var(--green); font-weight:600}
+
+    .callout{background:var(--bg-violet2); border-left:3px solid var(--violet-text);
+             border-radius:0 var(--r-sm) var(--r-sm) 0; padding:18px 22px; margin-top:22px}
+    .callout p:last-child{margin-bottom:0}
+    .callout strong{color:var(--ink)}
+
+    ol.steps{padding-left:20px; margin:14px 0 0}
+    ol.steps li{margin-bottom:10px; padding-left:4px}
+
+    footer.foot{border-top:1px solid var(--border-2); background:var(--bg-light2); padding-block:34px; font-size:.9rem; color:var(--muted)}
+    footer.foot a{color:var(--blue)}
+    .foot__row{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap}
+
+    @media (max-width:560px){
+      .hero{padding-block:38px}
+      main{padding-block:36px 56px}
+      section{margin-bottom:40px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar__inner">
+    <a class="logo" href="/">
+      <img src="../assets/pf-logo.jpg" alt="" width="30" height="30" />
+      <span>PerfectFlow</span>
+    </a>
+    <a class="bar__back" href="/">← Volver al inicio</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Subencargados del tratamiento</h1>
+    <p class="lede">
+      Los proveedores que intervienen en la prestación de PerfectFlow y que pueden tratar datos
+      personales por cuenta de nuestros clientes, conforme al artículo 28 del Reglamento (UE) 2016/679.
+    </p>
+    <span class="stamp">Última actualización: <b>13 de septiembre de 2026</b></span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section>
+    <p class="note">
+      Cuando un cliente contrata PerfectFlow, Code&nbsp;Flakes&nbsp;LLC actúa como <strong>encargado del
+      tratamiento</strong> y el cliente como responsable. Para prestar el servicio recurrimos a los
+      proveedores de esta página, que actúan como subencargados.
+    </p>
+    <p class="note">
+      Con cada uno mantenemos obligaciones de protección de datos no menos exigentes que las que
+      asumimos con nuestros clientes, y respondemos frente al cliente del cumplimiento por parte del
+      subencargado.
+    </p>
+    <div class="callout">
+      <p>
+        <strong>No todos los proveedores de esta página son iguales.</strong> Unos los contrata
+        Code&nbsp;Flakes para prestar el servicio; otros son cuentas del propio cliente a las que
+        PerfectFlow se conecta. La columna <em>De quién es la cuenta</em> lo indica en cada caso.
+      </p>
+      <p>
+        Cuando la cuenta es del cliente, la relación con ese proveedor es suya: nosotros sólo
+        transmitimos lo que él nos indica. Los listamos igualmente para que el mapa de por dónde
+        viajan sus datos esté completo.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Permanentes</h2>
+    <p class="note">Intervienen en toda instancia, con independencia de los módulos contratados.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Subencargado</th><th>Para qué</th><th>Datos que trata</th><th>De quién es la cuenta</th><th>Ubicación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DigitalOcean, LLC</td>
+            <td>Servidores, base de datos y almacenamiento de archivos</td>
+            <td>Todos los datos de la instancia</td>
+            <td class="where">Code Flakes</td>
+            <td class="where"><span class="eu">Ámsterdam</span> · <span class="eu">Fráncfort</span> · Nueva York, según el contrato</td>
+          </tr>
+          <tr>
+            <td>Cloudflare, Inc.</td>
+            <td>DNS, seguridad y red de distribución de contenido</td>
+            <td>Metadatos de conexión; no almacena contenido</td>
+            <td class="where">Code Flakes</td>
+            <td class="where">Red global</td>
+          </tr>
+          <tr>
+            <td>Mailjet SAS <span class="where">(Sinch)</span></td>
+            <td>Entrega de los correos que envía el sistema</td>
+            <td>Nombre, correo y contenido del mensaje</td>
+            <td class="where">Code Flakes</td>
+            <td class="where"><span class="eu">Unión Europea</span></td>
+          </tr>
+          <tr>
+            <td>Rollbar, Inc.</td>
+            <td>Registro de errores del sistema, para diagnóstico</td>
+            <td>Datos técnicos; incidentalmente identificadores de registros</td>
+            <td class="where">Code Flakes</td>
+            <td class="where">Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>Google Ireland Ltd. <span class="where">Analytics 4</span></td>
+            <td>Medición de la landing del cliente</td>
+            <td>Datos de navegación de los visitantes de la landing</td>
+            <td class="where">Code Flakes</td>
+            <td class="where"><span class="eu">Irlanda</span> y Estados Unidos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cuentas del cliente, conectadas por él</h2>
+    <p class="note">
+      Estos servicios funcionan con <strong>la cuenta del propio cliente</strong>, que él contrata y
+      controla. PerfectFlow se conecta a ellas cuando el cliente lo autoriza; mientras no conecte la
+      cuenta, <strong>no tratan dato alguno</strong>. El cliente puede revocar el acceso cuando quiera.
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Proveedor</th><th>Para qué</th><th>Se activa cuando</th><th>Ubicación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meta Platforms Ireland Ltd. <span class="where">WhatsApp Business</span></td>
+            <td>Envío y recepción de mensajes con los contactos del cliente</td>
+            <td>El cliente activa el canal de WhatsApp</td>
+            <td class="where"><span class="eu">Irlanda</span> y Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>Meta Platforms Ireland Ltd. <span class="where">Instagram y Facebook</span></td>
+            <td>Publicación de contenido y gestión de mensajes directos</td>
+            <td>El cliente conecta una cuenta de Instagram o una Página de Facebook</td>
+            <td class="where"><span class="eu">Irlanda</span> y Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>TikTok Technology Ltd.</td>
+            <td>Publicación de los vídeos que el cliente programa</td>
+            <td>El cliente conecta una cuenta de TikTok</td>
+            <td class="where"><span class="eu">Irlanda</span> y Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>Twilio Inc.</td>
+            <td>Envío de SMS y mensajería</td>
+            <td>El cliente activa el canal de SMS o mensajería vía Twilio</td>
+            <td class="where">Estados Unidos y <span class="eu">Unión Europea</span></td>
+          </tr>
+          <tr>
+            <td>Stripe, Inc.</td>
+            <td>Cobro a los contactos del cliente</td>
+            <td>El cliente conecta su cuenta de Stripe — siempre es la suya</td>
+            <td class="where"><span class="eu">Irlanda</span> y Estados Unidos</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sobre la analítica de la landing</h2>
+    <p class="note">
+      La landing de cada cliente mide en su propia propiedad de Google Analytics 4, alojada bajo la
+      cuenta de Google de Code&nbsp;Flakes. Cada cliente ve únicamente los datos de la suya dentro de
+      su panel. <strong>El sistema PerfectFlow no lleva analítica</strong>: dentro del CRM no se carga
+      ningún script de medición.
+    </p>
+  </section>
+
+  <section>
+    <h2>Cómo cobramos nuestra suscripción</h2>
+    <p class="note">
+      El cobro de la suscripción a PerfectFlow se gestiona fuera del sistema y no interviene ningún
+      proveedor que trate datos de los contactos del cliente. La pasarela de pago que PerfectFlow
+      integra es <strong>siempre la cuenta del propio cliente</strong>, para que él cobre a los suyos.
+    </p>
+  </section>
+
+  <section>
+    <h2>El motor de automatizaciones no es un subencargado</h2>
+    <div class="callout">
+      <p>
+        Las automatizaciones de cada cliente se ejecutan sobre <strong>software autoalojado en el propio
+        servidor de su instancia</strong>, con su propia base de datos. No hay un motor central compartido
+        entre clientes, y el proveedor del software no accede a ningún dato.
+      </p>
+      <p>
+        Es decir: las automatizaciones se procesan <strong>en la misma región</strong> que el resto de la
+        instancia. Los mensajes que envían sí salen por los canales de la tabla anterior.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo comunicamos los cambios</h2>
+    <p class="note">
+      Antes de incorporar o sustituir a un subencargado <strong>contratado por Code&nbsp;Flakes</strong>:
+    </p>
+    <ol class="steps">
+      <li>Lo comunicamos al cliente con al menos <strong>treinta (30) días de antelación</strong> y lo publicamos en esta página.</li>
+      <li>Durante ese plazo el cliente puede <strong>oponerse</strong> por motivos razonables y fundados en protección de datos.</li>
+      <li>Si no alcanzamos una solución, el cliente puede <strong>resolver el contrato sin penalización</strong>.</li>
+    </ol>
+    <p class="note" style="margin-top:18px">
+      Conectar o desconectar una cuenta propia es decisión del cliente y no requiere aviso por nuestra
+      parte. Para recibir aviso de los cambios en la lista, escríbenos a
+      <a href="mailto:info@perfectflow.cloud">info@perfectflow.cloud</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Región y transferencias internacionales</h2>
+    <p class="note">
+      La región de cada instancia se fija al contratar y no se modifica sin acuerdo escrito. Los datos no
+      se replican a otra región. <strong>Si el cliente está establecido en el Espacio Económico Europeo, o
+      trata datos de personas que se encuentran en él, su instancia se despliega en Ámsterdam o
+      Fráncfort.</strong>
+    </p>
+    <p class="note">
+      Code&nbsp;Flakes&nbsp;LLC tiene su sede en Estados Unidos y su personal técnico puede acceder a la
+      instancia para operarla y darle soporte. Cuando ese acceso constituye una transferencia
+      internacional, se ampara en las Cláusulas Contractuales Tipo aprobadas por la Decisión de Ejecución
+      (UE) 2021/914, Módulo Dos, incorporadas al acuerdo de encargo de tratamiento.
+    </p>
+  </section>
+
+  <section>
+    <h2>Documentos relacionados</h2>
+    <p class="note">
+      Esta página es la versión vigente del Anexo III del <strong>Acuerdo de Encargo de Tratamiento</strong>,
+      que se firma junto con el contrato de servicio. Para solicitar copia de cualquiera de los dos,
+      escríbenos a <a href="mailto:info@perfectflow.cloud">info@perfectflow.cloud</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__row">
+    <span>Code Flakes LLC · Delaware, Estados Unidos</span>
+    <span><a href="/">perfectflow.cloud</a> · <a href="mailto:info@perfectflow.cloud">info@perfectflow.cloud</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
